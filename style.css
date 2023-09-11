@@ -5,12 +5,14 @@ body{
     overflow-x: hidden;
     position: relative;
 }
+
 .fundo_branco{
   position: absolute;
   background-color: beige;
   height: 100%;
   width: 100%;
 }
+
 .fundo_diagonal{
   position: absolute;
   z-index: 0;
@@ -20,6 +22,7 @@ body{
   right: 0;
   height: 1200px;
 }
+
 header{
     background-color: #8b0000;
     height: 20vh;
@@ -29,12 +32,14 @@ header{
     justify-content: space-between;
     position: relative;
 }
+
 header .logo{
-    font-size: 1.9rem; 
+    font-size: 60px; 
     font-family: 'Times New Roman', Times, serif;
     margin-left: 15px;
     color: beige;
 }
+
 header .ball-symbol{
     width: 40px;
     height: 40px;
@@ -54,8 +59,8 @@ header .ball-symbol{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
+
 .card {
   border-radius: 5px;
   box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
@@ -67,6 +72,7 @@ header .ball-symbol{
   z-index: 2;
   background-color: rgb(243, 243, 243);
 }
+
 .card:hover{
   transform: translateY(-5px);
   cursor: pointer;
@@ -78,6 +84,7 @@ header .ball-symbol{
 }
 
 .card {
+  position: relative;
   margin-bottom: 6vh;
   border-left: 3px solid darkred;
 }
@@ -105,7 +112,14 @@ section{
 }
 
 h1{
-  font-size: 25px;
+  margin: 2vw;
+  font-size: 47px;
+  z-index: 2;
+}
+
+h1.red{
+  color: white;
+  margin: 2vw;
   z-index: 2;
 }
 
@@ -114,11 +128,30 @@ h2{
   text-decoration: none;
 }
 
-.caixa_texto_p{
+.caixa_texto_p_white{
+  margin: 4vw;
+  font-size: 25px;
   color: black;
+  z-index: 2;
+}
+
+.caixa_texto_p_red{
+  margin: 4vw;
+  font-size: 25px;
+  color: white;
   z-index: 2;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+iframe{
+  margin-left: 50%;
+  border-radius: 12px;
+}
+
+.center-items{
+  display: flex;
+  justify-content: center;
 }
